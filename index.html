@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PERPUSTAKAAN WIDYA WIYATA SMEPASDA</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+  <div class="brand">
+    <img src="img/logo.png" alt="Logo">
+    <div class="title"><h1>PERPUSTAKAAN WIDYA WIYATA SMEPASDA</h1><p>SMP Negeri 2 Pasirian</p></div>
+  </div>
+  <div class="controls">
+    <button id="searchBtn" class="icon-btn" onclick="location.href='katalog.html'">🔍</button>
+    <button id="menuBtn" class="icon-btn" onclick="toggleNav()" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<nav id="navSide" class="nav-side" aria-hidden="true">
+  <a href="index.html">Home</a>
+  <a href="katalog.html">Katalog Buku</a>
+  <a href="berita.html">Berita</a>
+  <a href="about.html">About</a>
+  <a href="kontak.html">Kontak</a>
+  <a href="admin.html">Panel Admin</a>
+</nav>
+
+<main class="container">
+  <section class="hero card">
+    <div class="hero" style="grid-template-columns:1fr 1fr">
+      <div style="background-image:url('img/placeholder.jpg');background-size:cover;border-radius:8px;min-height:160px"></div>
+      <div style="display:flex;flex-direction:column;justify-content:center">
+        <h2 style="margin:0;color:var(--blue-600)">Selamat datang di Perpustakaan</h2>
+        <p style="color:var(--muted)">Situs resmi Perpustakaan Widya Wiyata SMEPASDA — pusat sumber belajar dan literasi siswa.</p>
+        <div style="margin-top:12px;display:flex;gap:8px">
+          <button class="btn" onclick="location.href='katalog.html'">Lihat Katalog</button>
+          <button class="btn" style="background:#fff;color:var(--blue-600)" onclick="location.href='berita.html'">Informasi Terbaru</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="margin-top:18px" class="card">
+    <div class="section-title"><h3 style="margin:0">Layanan Perpustakaan Widya Wiyata SMEPASDA</h3></div>
+    <p style="color:var(--muted)">Jelajahi layanan perpustakaan dan akses koleksi buku serta berita sekolah.</p>
+    <div class="icon-menu">
+      <div class="icon-item" onclick="location.href='katalog.html'"><div class="ic">📖</div><p>Katalog Buku</p></div>
+      <div class="icon-item" onclick="location.href='berita.html'"><div class="ic">📰</div><p>Berita</p></div>
+      <div class="icon-item" onclick="location.href='about.html'"><div class="ic">🏫</div><p>About</p></div>
+      <div class="icon-item" onclick="location.href='kontak.html'"><div class="ic">📬</div><p>Kontak</p></div>
+    </div>
+  </section>
+
+  <section style="margin-top:18px" class="card">
+    <h3>Informasi Terkini</h3>
+    <div style="display:flex;gap:12px;align-items:center;margin-top:10px">
+      <img src="img/placeholder.jpg" style="width:160px;height:100px;object-fit:cover;border-radius:8px">
+      <div><h4 style="margin:0;color:var(--blue-600)">Layanan sirkulasi buku kembali normal</h4><p style="margin:8px 0;color:var(--muted)">Perpustakaan kembali membuka layanan sirkulasi dan peminjaman dengan protokol kesehatan.</p></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer"><p>&copy; 2025 PERPUSTAKAAN WIDYA WIYATA SMEPASDA</p></footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
